@@ -11,10 +11,10 @@ public class Main {
         int endwert;
         while (true) {
             endwert = getValidNumber(scanner, "Bitte geben Sie den Endwert ein: ");
-            if (endwert >= startwert) {
+            if (endwert > startwert) {
                 break;
             } else {
-                System.out.println("Fehler: Der Endwert muss größer oder gleich dem Startwert sein.");
+                System.out.println("Fehler: Der Endwert muss größer dem Startwert sein.");
             }
         }
 
